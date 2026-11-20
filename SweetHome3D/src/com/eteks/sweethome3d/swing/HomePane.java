@@ -357,6 +357,9 @@ public class HomePane extends JRootPane implements HomeView {
         furnitureController, "toggleFurnitureSort", HomePieceOfFurniture.SortableProperty.HEIGHT);
     createAction(ActionType.SORT_HOME_FURNITURE_BY_X, preferences, 
         furnitureController, "toggleFurnitureSort", HomePieceOfFurniture.SortableProperty.X);
+    createAction(ActionType.SORT_HOME_FURNITURE_BY_VOLUME, preferences,
+            furnitureController, "toggleFurnitureSort",
+            HomePieceOfFurniture.SortableProperty.VOLUME);
     createAction(ActionType.SORT_HOME_FURNITURE_BY_Y, preferences, 
         furnitureController, "toggleFurnitureSort", HomePieceOfFurniture.SortableProperty.Y);
     createAction(ActionType.SORT_HOME_FURNITURE_BY_ELEVATION, preferences, 
@@ -395,6 +398,8 @@ public class HomePane extends JRootPane implements HomeView {
         furnitureController, "toggleFurnitureVisibleProperty", HomePieceOfFurniture.SortableProperty.DEPTH);
     createAction(ActionType.DISPLAY_HOME_FURNITURE_HEIGHT, preferences, 
         furnitureController, "toggleFurnitureVisibleProperty", HomePieceOfFurniture.SortableProperty.HEIGHT);
+    createAction(ActionType.DISPLAY_HOME_FURNITURE_VOLUME, preferences,
+        furnitureController, "toggleFurnitureVisibleProperty", HomePieceOfFurniture.SortableProperty.VOLUME);
     createAction(ActionType.DISPLAY_HOME_FURNITURE_X, preferences, 
         furnitureController, "toggleFurnitureVisibleProperty", HomePieceOfFurniture.SortableProperty.X);
     createAction(ActionType.DISPLAY_HOME_FURNITURE_Y, preferences, 
@@ -1324,6 +1329,8 @@ public class HomePane extends JRootPane implements HomeView {
         sortActions, HomePieceOfFurniture.SortableProperty.DEPTH);
     addActionToMap(ActionType.SORT_HOME_FURNITURE_BY_HEIGHT, 
         sortActions, HomePieceOfFurniture.SortableProperty.HEIGHT);
+    addActionToMap(ActionType.SORT_HOME_FURNITURE_BY_VOLUME,
+            sortActions, HomePieceOfFurniture.SortableProperty.VOLUME);
     addActionToMap(ActionType.SORT_HOME_FURNITURE_BY_X, 
         sortActions, HomePieceOfFurniture.SortableProperty.X);
     addActionToMap(ActionType.SORT_HOME_FURNITURE_BY_Y, 
